@@ -23,6 +23,7 @@ if (KBNumber != undefined && KBNumber != null) {
     $.getJSON('https://spellbound.slothstudiorbx.com/resources/wikidata.json', function(data) {
         $.each(data, function(KBInd, KBData) {
           KBInd = KBInd.toString();
+          console.log("KBNumber: " + KBNumber);
           console.log("KBInd: " + KBInd);
           if (KBNumber == KBInd) {
 
