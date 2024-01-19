@@ -21,6 +21,10 @@ var KBNumber = getUrlParameter('KB');
 if (KBNumber != undefined && KBNumber != null) {
     $.getJSON('https://spellbound.slothstudiorbx.com/resources/wikidata.json', function(data) {
         $.each(data, function(KBInd, KBData) {
+          if (KBNumber == KBInd) {
+
+            console.log(data);
+            console.log(KBData)
 
             var wikinav = `
             <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary rounded-3">
@@ -46,9 +50,10 @@ if (KBNumber != undefined && KBNumber != null) {
             // Render KB
             $('#wikinav').appendTo(wikinav);
             $('#wikicontent').load(KBFilePath);
-
+  
             
             return false; // Break loop to end loading. 
+          }
             
         //    var tblRow = "<tr>" + "<td>" + f.firstName + "</td>" +
         //     "<td>" + f.lastName + "</td>" + "<td>" + f.job + "</td>" + "<td>" + f.roll + "</td>" + "</tr>"
