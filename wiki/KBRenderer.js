@@ -34,7 +34,7 @@ if (KBNumber != undefined && KBNumber != null) {
               <a class="link-body-emphasis fw-semibold text-decoration-none" href="https://spellbound.slothstudiorbx.com/wiki.html">Wiki</a>
             </li>
             <li class="breadcrumb-item">
-                <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">``` + KBData.Category + ```</a>
+                <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">` + KBData.Category + `</a>
               </li>
             <li class="breadcrumb-item active" aria-current="page">
             New Player Basics
