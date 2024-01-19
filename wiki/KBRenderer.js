@@ -25,8 +25,6 @@ if (KBNumber != undefined && KBNumber != null) {
           KBInd = KBInd.toString(); // Convert to String
           if (KBNumber == KBInd) {
 
-            console.log(KBData);
-
             var wikinav = `
             <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary rounded-3">
             <li class="breadcrumb-item">
