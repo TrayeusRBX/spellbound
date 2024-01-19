@@ -44,6 +44,10 @@ if (KBNumber != undefined && KBNumber != null) {
             </li>
           </ol>
           `;
+
+            console.log(wikinav);
+            console.log(KBData.WikiFileName);
+
             var KBFilePath = "KBs/" + KBData.WikiFileName;
     
             // Render KB
