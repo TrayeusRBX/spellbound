@@ -22,7 +22,7 @@ if (KBNumber != undefined && KBNumber != null) {
     $.getJSON('../resources/wikidata.json', function(data) {
         $.each(data, function(KBInd, KBData) {
 
-            var wikinav = ```
+            var wikinav = `
             <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary rounded-3">
             <li class="breadcrumb-item">
               <a class="link-body-emphasis" href="https://spellbound.slothstudiorbx.com/index.html">
@@ -40,7 +40,7 @@ if (KBNumber != undefined && KBNumber != null) {
             New Player Basics
             </li>
           </ol>
-          ```;
+          `;
             var KBFilePath = "KBs/" + KBData.WIKIFileName;
     
             // Render KB
