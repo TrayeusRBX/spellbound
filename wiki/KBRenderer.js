@@ -20,15 +20,12 @@ var KBNumber = getUrlParameter('KB');
 
 if (KBNumber != undefined && KBNumber != null) {
   KBNumber = KBNumber.toString(); // Convert to String
-    $.getJSON('https://spellbound.slothstudiorbx.com/resources/wikidata.json', function(data) {
+  $.getJSON('https://spellbound.slothstudiorbx.com/resources/wikidata.json', function(data) {
         $.each(data, function(KBInd, KBData) {
-          KBInd = KBInd.toString();
-          console.log("KBNumber: " + KBNumber);
-          console.log("KBInd: " + KBInd);
+          KBInd = KBInd.toString(); // Convert to String
           if (KBNumber == KBInd) {
 
-            console.log(data);
-            console.log(KBData)
+            console.log(KBData);
 
             var wikinav = `
             <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary rounded-3">
@@ -49,7 +46,7 @@ if (KBNumber != undefined && KBNumber != null) {
             </li>
           </ol>
           `;
-            var KBFilePath = "KBs/" + KBData.WIKIFileName;
+            var KBFilePath = "KBs/" + KBData.WikiFileName;
     
             // Render KB
             $('#wikinav').appendTo(wikinav);
