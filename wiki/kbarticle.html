@@ -176,38 +176,23 @@
 
     <!-- WIKI NAV -->
     <div class="container my-5">
-        <nav aria-label="breadcrumb" id="wikinav">
-          <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary rounded-3">
-            <li class="breadcrumb-item">
-              <a class="link-body-emphasis" href="https://spellbound.slothstudiorbx.com/index.html">
-                <svg class="bi" width="16" height="16"><use xlink:href="#house-door-fill"></use></svg>
-                <span class="visually-hidden">Home</span>
-              </a>
-            </li>
-            <li class="breadcrumb-item">
-              <a class="link-body-emphasis fw-semibold text-decoration-none" href="https://spellbound.slothstudiorbx.com/wiki.html">Wiki</a>
-            </li>
-            <li class="breadcrumb-item">
-                <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">Basics</a>
-              </li>
-            <li class="breadcrumb-item active" aria-current="page">
-            New Player Basics
-            </li>
-          </ol>
-        </nav>
+        <nav aria-label="breadcrumb" id="wikinav"></nav>
     </div>
 
     <main class="container">
-    <div class="bg-body-tertiary p-5 rounded">
-        <h1>New Player Basics</h1>
-        <p class="lead"></p>
+    <div id="wikicontent" class="bg-body-tertiary p-5 rounded">
+        <h1>KB Name</h1>
+        <p class="lead">Description goes here.</p>
     </div>
     </main>
+
     <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function(){
             $("#navbar").load("resources/navbar.html");
         });
     </script>
+    <!-- Run KB Renderer Script on Page Parameters -->
+    <script src="KBRenderer.js"></script>
 </body>
 </html>
