@@ -19,7 +19,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 var KBNumber = getUrlParameter('KB');
 
 if (KBNumber != undefined && KBNumber != null) {
-    $.getJSON('../resources/wikidata.json', function(data) {
+    $.getJSON('https://spellbound.slothstudiorbx.com/resources/wikidata.json', function(data) {
         $.each(data, function(KBInd, KBData) {
 
             var wikinav = `
