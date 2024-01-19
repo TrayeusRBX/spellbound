@@ -19,8 +19,11 @@ var getUrlParameter = function getUrlParameter(sParam) {
 var KBNumber = getUrlParameter('KB');
 
 if (KBNumber != undefined && KBNumber != null) {
+  KBNumber = KBNumber.toString(); // Convert to String
     $.getJSON('https://spellbound.slothstudiorbx.com/resources/wikidata.json', function(data) {
         $.each(data, function(KBInd, KBData) {
+          KBInd = KBInd.toString();
+          console.log("KBInd: " + KBInd);
           if (KBNumber == KBInd) {
 
             console.log(data);
