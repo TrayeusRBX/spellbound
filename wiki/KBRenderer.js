@@ -62,6 +62,9 @@ $(document).ready(function(){
               // Render KB
               $(wikinav).appendTo('#wikinav');
               $('#wikicontent').load(KBFilePath);
+
+              // Set Page Title (Browser Tab)
+              $(document).attr("title", KBData.Name);
       
                 
               return false; // Break loop to end loading. 
