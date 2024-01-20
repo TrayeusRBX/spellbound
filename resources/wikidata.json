@@ -1,13 +1,15 @@
 {
     "KB00001": {
-        "Name": "New Player Basics", 
+        "Name": "W101: New Player Basics", 
         "Category": "Basics",
-        "WikiFileName": "new-player-basics.html"
+        "WikiFileName": "new-player-basics.html",
+        "Author": "Trayeus"
     },
 
     "KB00002": {
-        "Name": "Backpack Item Lock", 
+        "Name": "W101: Toggling Backpack Item Lock", 
         "Category": "Game Settings",
-        "WikiFileName": "backpack-item-lock.html"
+        "WikiFileName": "backpack-item-lock.html",
+        "Author": "Trayeus"
     }
 }

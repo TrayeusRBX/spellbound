@@ -35,6 +35,11 @@ $(document).ready(function(){
             KBInd = KBInd.toString(); // Convert to String
             if (KBNumber == KBInd) {
 
+                // Set Page Title (Browser Tab)
+                var pageTitle = KBInd + ": " + KBData.Name
+                $(document).attr("title", pageTitle);
+
+                // KB WikiNav
                 var wikinav = `
                 <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary rounded-3">
                 <li class="breadcrumb-item">
@@ -55,18 +60,20 @@ $(document).ready(function(){
               </ol>
               `;
               wikinav = wikinav.toString();
+              $(wikinav).appendTo('#wikinav');
 
+              // KB contents
               var KBFilePath = "KBs/" + KBData.WikiFileName;
               KBFilePath = KBFilePath.toString();
-        
-              // Render KB
-              $(wikinav).appendTo('#wikinav');
               $('#wikicontent').load(KBFilePath);
+              // KB Title
+              var KBTitle = "<h1>" + KBData.Name + "</h1>"
+              $('#wikicontent').prepend(KBTitle);
+              // KB Footer
+              var KBFooter = "<p>Author: " + KBData.Author + "</p>"
+              $('#wikicontent').prepend(KBFooter);
 
-              // Set Page Title (Browser Tab)
-              $(document).attr("title", KBData.Name);
       
-                
               return false; // Break loop to end loading. 
             }
               
