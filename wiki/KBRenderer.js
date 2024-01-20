@@ -38,7 +38,7 @@ $(document).ready(function(){
                   <a class="link-body-emphasis fw-semibold text-decoration-none" href="https://spellbound.slothstudiorbx.com/wiki.html">Wiki</a>
                 </li>
                 <li class="breadcrumb-item">
-                    <a class="link-body-emphasis fw-semibold text-decoration-none" href="#">` + KBData.Category + `</a>
+                    <a class="link-body-emphasis fw-semibold text-decoration-none" href="https://spellbound.slothstudiorbx.com/wiki.html?Category=` + KBData.Category + `">` + KBData.Category + `</a>
                   </li>
                 <li class="breadcrumb-item active" aria-current="page">
                 ` + KBData.Name + `
@@ -51,7 +51,7 @@ $(document).ready(function(){
               KBFilePath = KBFilePath.toString();
         
               // Render KB
-              $('#wikinav').appendTo(wikinav);
+              $(wikinav).appendTo('#wikinav');
               $('#wikicontent').load(KBFilePath);
       
                 
@@ -64,6 +64,6 @@ $(document).ready(function(){
         });
       });
   } else {
-      location = "kbnotfound.html";
+      location = "https://spellbound.slothstudiorbx.com/wiki/kbnotfound.html";
   }
 });
