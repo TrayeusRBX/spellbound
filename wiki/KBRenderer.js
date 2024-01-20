@@ -68,9 +68,11 @@ $(document).ready(function(){
               $('#wikicontent').load(KBFilePath);
               // KB Title
               var KBTitle = "<h1>" + KBData.Name + "</h1>"
+              KBTitle = KBTitle.toString();
               $('#wikicontent').prepend(KBTitle);
               // KB Footer
               var KBFooter = "<p>Author: " + KBData.Author + "</p>"
+              KBFooter = KBFooter.toString();
               $('#wikicontent').prepend(KBFooter);
 
       
