@@ -1,3 +1,12 @@
+/*
+References:
+- https://stackoverflow.com/questions/20772417/how-to-loop-through-json-array-in-jquery
+- https://stackoverflow.com/questions/19491336/how-to-get-url-parameter-using-jquery-or-plain-javascript
+- https://stackoverflow.com/questions/22607150/getting-the-url-parameters-inside-the-html-page
+- https://api.jquery.com/appendTo/
+- https://stackoverflow.com/questions/15581059/how-to-add-text-to-an-existing-div-with-jquery
+- https://stackoverflow.com/questions/1784780/how-to-break-out-of-jquery-each-loop
+*/
 $(document).ready(function(){
   // Function: Get Website Parameters
   var getUrlParameter = function getUrlParameter(sParam) {
@@ -29,7 +38,7 @@ $(document).ready(function(){
                 var wikinav = `
                 <ol class="breadcrumb breadcrumb-chevron p-3 bg-body-tertiary rounded-3">
                 <li class="breadcrumb-item">
-                  <a class="link-body-emphasis" href="https://spellbound.slothstudiorbx.com/index.html">
+                  <a class="link-body-emphasis" href="https://spellbound.slothstudiorbx.com">
                     <svg class="bi" width="16" height="16"><use xlink:href="#house-door-fill"></use></svg>
                     <span class="visually-hidden">Home</span>
                   </a>

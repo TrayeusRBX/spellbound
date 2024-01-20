@@ -3,5 +3,11 @@
         "Name": "New Player Basics", 
         "Category": "Basics",
         "WikiFileName": "new-player-basics.html"
+    },
+
+    "KB00002": {
+        "Name": "Backpack Item Lock", 
+        "Category": "Game Settings",
+        "WikiFileName": "backpack-item-lock.html"
     }
 }
