@@ -82,11 +82,7 @@ $(document).ready(function(){
 
 
               // Render KB Page
-              $('#wikicontent').html('');
-
-              $(KBTitle).appendTo('#wikicontent');
-              $(KBContent).appendTo('#wikicontent');
-              $(KBFooter).appendTo('#wikicontent');
+              $('#wikicontent').html(KBTitle + KBContent + KBFooter);
 
       
               return false; // Break loop to end loading. 
