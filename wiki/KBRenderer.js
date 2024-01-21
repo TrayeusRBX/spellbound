@@ -69,11 +69,11 @@ $(document).ready(function(){
               // KB Title
               var KBTitle = "<h1>" + KBData.Name + "</h1>"
               KBTitle = KBTitle.toString();
-              $('#wikicontent').prepend(KBTitle);
+              $(KBTitle).prependTo('#wikicontent');
               // KB Footer
               var KBFooter = "<p>Author: " + KBData.Author + "</p>"
               KBFooter = KBFooter.toString();
-              $('#wikicontent').prepend(KBFooter);
+              $(KBFooter).appendTo('#wikicontent');
 
       
               return false; // Break loop to end loading. 

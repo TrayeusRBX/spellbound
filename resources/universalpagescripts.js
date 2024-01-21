@@ -1,6 +1,4 @@
-// Load before page to avoid styling not loading in first.
-$("#page-head-code").load("https://spellbound.slothstudiorbx.com/resources/styling.html");
-
+// Load Navbar
 $(document).ready(function(){
     $("#navbar").load("https://spellbound.slothstudiorbx.com/resources/navbar.html");
 });
