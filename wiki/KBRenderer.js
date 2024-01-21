@@ -66,9 +66,10 @@ $(document).ready(function(){
               var KBFilePath = "KBs/" + KBData.WikiFileName;
               KBFilePath = KBFilePath.toString();
 
+              var FullKBFilePath = "https://spellbound.slothstudiorbx.com/wiki/KBs/" + WikiFileName;
               var KBContent = "<p>No KB Data Found.</p>";
 
-              $.get("https://www.google.com", function(KBFileData) {
+              $.get(FullKBFilePath, function(KBFileData) {
                 KBContent = KBFileData;
               });
               // Get KB Title
@@ -81,6 +82,8 @@ $(document).ready(function(){
 
 
               // Render KB Page
+              $('#wikicontent').html('');
+
               $(KBTitle).appendTo('#wikicontent');
               $(KBContent).appendTo('#wikicontent');
               $(KBFooter).appendTo('#wikicontent');
