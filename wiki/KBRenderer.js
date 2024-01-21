@@ -78,15 +78,15 @@ $(document).ready(function(){
 
 
               // Render KB Page
-              $('#wikicontent').html('');
-
-              $(KBTitle).appendTo('#wikicontent');
-
               $.get(FullKBFilePath, function(KBContent) {
+             
+                $('#wikicontent').html('');
+             
+                $(KBTitle).appendTo('#wikicontent');
                 $(KBContent).appendTo('#wikicontent');
+                $(KBFooter).appendTo('#wikicontent');
+             
               });
-
-              $(KBFooter).appendTo('#wikicontent');
 
       
               return false; // Break loop to end loading. 
