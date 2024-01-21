@@ -62,17 +62,27 @@ $(document).ready(function(){
               wikinav = wikinav.toString();
               $(wikinav).appendTo('#wikinav');
 
-              // KB contents
+              // Get KB contents
               var KBFilePath = "KBs/" + KBData.WikiFileName;
               KBFilePath = KBFilePath.toString();
-              $('#wikicontent').load(KBFilePath);
-              // KB Title
+
+              var KBContent = "<p>No KB Data Found.</p>";
+
+              $.get("https://www.google.com", function(KBFileData) {
+                KBContent = KBFileData;
+              });
+              // Get KB Title
               var KBTitle = "<h1>" + KBData.Name + "</h1>"
               KBTitle = KBTitle.toString();
-              $(KBTitle).prependTo('#wikicontent');
-              // KB Footer
+              
+              // Get KB Footer
               var KBFooter = "<p>Author: " + KBData.Author + "</p>"
               KBFooter = KBFooter.toString();
+
+
+              // Render KB Page
+              $(KBTitle).appendTo('#wikicontent');
+              $(KBContent).appendTo('#wikicontent');
               $(KBFooter).appendTo('#wikicontent');
 
       
