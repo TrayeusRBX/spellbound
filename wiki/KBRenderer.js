@@ -66,7 +66,7 @@ $(document).ready(function(){
               var KBFilePath = "KBs/" + KBData.WikiFileName;
               KBFilePath = KBFilePath.toString();
 
-              var FullKBFilePath = "https://spellbound.slothstudiorbx.com/wiki/KBs/" + WikiFileName;
+              var FullKBFilePath = "https://spellbound.slothstudiorbx.com/wiki/KBs/" + KBData.WikiFileName;
               var KBContent = "<p>No KB Data Found.</p>";
 
               $.get(FullKBFilePath, function(KBFileData) {
