@@ -73,7 +73,7 @@ $(document).ready(function(){
               KBTitle = KBTitle.toString();
               
               // Get KB Footer
-              var KBFooter = "<p>Author: " + KBData.Author + "</p>"
+              var KBFooter = "<br /><h3><em>Article Authored by:</em> " + KBData.Author + "</h3>"
               KBFooter = KBFooter.toString();
 
 
