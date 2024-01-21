@@ -70,6 +70,7 @@ $(document).ready(function(){
               var KBContent = "<p>No KB Data Found.</p>";
 
               $.get(FullKBFilePath, function(KBFileData) {
+                console.log(KBFileData);
                 KBContent = KBFileData;
               });
               // Get KB Title
